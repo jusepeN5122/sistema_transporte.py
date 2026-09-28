@@ -5,7 +5,7 @@ import math
 # 1. BASE DE CONOCIMIENTO (Hechos y Reglas)
 # ==========================================
 
-# Ubicación de las estaciones (Coordenadas x, y en kilómetros)
+# Ubicación de las estaciones
 ESTACIONES = {
     "Portal Norte": (10, 20),
     "Calle 170": (10, 18),
@@ -18,7 +18,7 @@ ESTACIONES = {
     "Portal Suba": (2, 16)
 }
 
-# Reglas de conexión: (Estación 1, Estación 2, Tiempo en min, Línea)
+# Reglas de conexión
 CONEXIONES = [
     ("Portal Norte", "Calle 170", 3, "Línea A"),
     ("Calle 170", "Calle 100", 6, "Línea A"),
@@ -31,7 +31,7 @@ CONEXIONES = [
     ("Marly", "Calle 26", 4, "Línea B")
 ]
 
-PENALIZACION_TRANSBORDO = 3  # Minutos adicionales por cambiar de línea
+PENALIZACION_TRANSBORDO = 3  
 
 # ==========================================
 # 2. MOTOR DE INFERENCIA Y BÚSQUEDA HEURÍSTICA (A*)
